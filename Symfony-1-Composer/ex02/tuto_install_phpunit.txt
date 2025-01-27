@@ -1,0 +1,7 @@
+1. Enter in phpunit_lts directory
+
+2.Install PHPUnit using composer install :
+composer install --no-interaction --ignore-platform-reqs
+
+3. Check the installation :
+./vendor/bin/phpunit --version
