@@ -1,0 +1,3 @@
+Différences entre install et update
+composer install : Installe les versions exactes des dépendances comme spécifiées dans composer.lock. Si composer.lock n'existe pas, il est généré à partir de composer.json.
+composer update : Met à jour les paquets dans composer.json vers les dernières versions compatibles, puis met à jour composer.lock.
