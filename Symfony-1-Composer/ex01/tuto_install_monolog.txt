@@ -1,0 +1,4 @@
+1. Enter in each directory for each version
+
+2. Use composer install
+composer install --no-interaction --ignore-platform-reqs
