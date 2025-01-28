@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Notes Form{% endblock %}
+
+{% block body %}
+<h1>Notes Form</h1>
+
+{{ form_start(form) }}
+    {{ form_row(form.message) }}
+    {{ form_row(form.includeTimestamp) }}
+    {{ form_row(form.submit) }}
+{{ form_end(form) }}
+
+{% if lastLine %}
+    <h2>Dernière ligne ajoutée :</h2>
+    <p>{{ lastLine }}</p>
+{% endif %}
+
+<h2>Contenu du fichier :</h2>
+<ul>
+    {% for line in fileContent %}
+        <li>{{ line }}</li>
+    {% else %}
+        <li>Le fichier est vide.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

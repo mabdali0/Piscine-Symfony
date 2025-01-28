@@ -1,0 +1,13 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+main_page:
+    path: /e01
+    controller: App\Controller\MainController::mainPage
+
+article_page:
+    path: /e01/{article}
+    controller: App\Controller\MainController::articlePage
