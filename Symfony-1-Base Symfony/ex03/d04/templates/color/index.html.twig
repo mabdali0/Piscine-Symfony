@@ -1,0 +1,30 @@
+{# templates/color/index.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Shades of Colors{% endblock %}
+
+{% block body %}
+    <h1>Shades of Colors</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                {# Affiche les entêtes du tableau pour chaque couleur #}
+                {% for color in colors %}
+                    <th>{{ color|capitalize }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {# Génère les lignes du tableau pour chaque nuance de couleur #}
+            {% for i in 0..number_of_colors - 1 %}
+                <tr>
+                    {% for color in colors %}
+                        <td style="height: 40px; width: 80px; background-color: {{ shades[color][i] }};"></td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
