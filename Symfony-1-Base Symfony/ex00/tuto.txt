@@ -1,8 +1,0 @@
-1.
-Run symfony new d04 --version=lts
-
-2.
-Run symfony server:start
-
-3.
-Go to http://127.0.0.1:8000/e00/firstpage
