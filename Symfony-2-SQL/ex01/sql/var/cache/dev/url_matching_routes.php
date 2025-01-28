@@ -8,6 +8,8 @@
 return [
     false, // $matchHost
     [ // $staticRoutes
+        '/e00' => [[['_route' => 'index', '_controller' => 'App\\Controller\\DatabaseController::index'], null, null, null, false, false, null]],
+        '/create-table' => [[['_route' => 'create_table', '_controller' => 'App\\Controller\\DatabaseController::createTable'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'
