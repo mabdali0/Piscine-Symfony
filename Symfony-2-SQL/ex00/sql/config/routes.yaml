@@ -1,0 +1,13 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+index:
+    path: /e00
+    controller: App\Controller\DatabaseController::index
+
+create_table:
+    path: /create-table
+    controller: App\Controller\DatabaseController::createTable
