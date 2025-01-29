@@ -5,7 +5,7 @@ controllers:
     type: attribute
 
 index:
-    path: /e00
+    path: /e01
     controller: App\Controller\DatabaseController::index
 
 create_table:
